@@ -1,8 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Register = () => {
   return (
-    <div>
-      <h1>This is my Register component</h1>
-      <p>I am rendered by a React function component</p>
+    <div className="auth">
+      <h1>Register</h1>
+      <form>
+        <input required type="text" placeholder="login" />
+        <input required type="email" placeholder="email" />
+        <input required type="password" placeholder="password" />
+        <button>Register</button>
+        <p>this is error</p>
+        <span>
+          Do you have an account?<Link to={"/login"}>Auth</Link>
+        </span>
+      </form>
     </div>
   );
 };
