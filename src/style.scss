@@ -1,0 +1,57 @@
+.app {
+  .container {
+    //log and reg
+
+    .auth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #76b5c5;
+      flex-direction: column;
+
+      h1 {
+        font-size: 20px;
+        color: teal;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 150px;
+        gap: 20px;
+        background-color: aliceblue;
+        border: solid 2px teal;
+        border-radius: 5px;
+
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: solid 1px teal;
+          border-radius: 5px;
+        }
+
+        button {
+          background-color: teal;
+          padding: 10px;
+          color: white;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+
+        span {
+          text-align: center;
+          font-size: 12px;
+        }
+
+        p {
+          text-align: center;
+          color: red;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
