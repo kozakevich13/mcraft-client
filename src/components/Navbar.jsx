@@ -1,8 +1,34 @@
+import { Link } from "react-router-dom";
+import logo from "../img/logo.png";
+
 const Navbar = () => {
   return (
-    <div>
-      <h1>This is my Navbar component</h1>
-      <p>I am rendered by a React function component</p>
+    <div className="navbar">
+      <div className="container">
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="links">
+          <Link className="link" to={""}>
+            <h5>Форум</h5>
+          </Link>
+          <Link className="link" to={""}>
+            <h5>Правила</h5>
+          </Link>
+          <Link className="link" to={""}>
+            <h5>Донат</h5>
+          </Link>
+          <Link className="link" to={""}>
+            <h5>Сервера</h5>
+          </Link>
+          <Link className="link" to={""}>
+            <h5>Гайди</h5>
+          </Link>
+          <Link className="link" to={""}>
+            <h5>Відео</h5>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
