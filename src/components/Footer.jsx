@@ -1,9 +1,13 @@
+import logo from "../img/logo.png";
+
 const Footer = () => {
   return (
-    <div>
-      <h1>This is my Footer component</h1>
-      <p>I am rendered by a React function component</p>
-    </div>
+    <footer>
+      <img src={logo} alt="logo" />
+      <span>
+        Made with love and <b>React.js</b>
+      </span>
+    </footer>
   );
 };
 
