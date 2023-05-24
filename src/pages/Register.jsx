@@ -7,8 +7,8 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+
   function handleSubmit(event) {
-    console.log("hi");
     event.preventDefault();
     axios
       .post(process.env.REACT_APP_BASE_URL, {
