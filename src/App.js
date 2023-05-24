@@ -8,6 +8,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./style.scss";
 import Profile from "./pages/Profile";
+import { useState } from "react";
+import UserContext from "./context/UserContext";
 
 const Layout = () => {
   return (
@@ -53,10 +55,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [user, setUser] = useState(null);
   return (
     <div className="app">
       <div className="container">
-        <RouterProvider router={router} />
+        <UserContext.Provider value={{ user, setUser }}>
+          <RouterProvider router={router} />
+        </UserContext.Provider>
       </div>
     </div>
   );

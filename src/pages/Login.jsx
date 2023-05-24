@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import UserContext from "../context/UserContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loginStatus, setLoginStatus] = useState("");
+  const navigate = useNavigate();
+  const userContext = useContext(UserContext);
 
   const login = (event) => {
     event.preventDefault();
@@ -19,6 +22,8 @@ const Login = () => {
           setLoginStatus(res.data.message);
         } else {
           setLoginStatus(res.data[0].email);
+          navigate("/profile");
+          userContext.setUser(res.data[0]);
         }
       })
       .catch((err) => console.log(err));
