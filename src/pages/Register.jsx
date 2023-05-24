@@ -22,6 +22,9 @@ const Register = () => {
   return (
     <div className="auth">
       <h1>Register</h1>
+      <Link className="link" to={"/"}>
+        <h5>Home</h5>
+      </Link>
       <form onSubmit={handleSubmit}>
         <input
           required

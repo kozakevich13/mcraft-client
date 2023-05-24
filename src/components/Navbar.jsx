@@ -10,19 +10,16 @@ const Navbar = () => {
         </div>
         <div className="links">
           <Link className="link" to={""}>
-            <h5>Форум</h5>
+            <h5>Forum</h5>
           </Link>
           <Link className="link" to={""}>
-            <h5>Правила</h5>
+            <h5>Rules</h5>
           </Link>
           <Link className="link" to={""}>
-            <h5>Донат</h5>
+            <h5>Donate</h5>
           </Link>
           <Link className="link" to={""}>
-            <h5>Сервера</h5>
-          </Link>
-          <Link className="link" to={""}>
-            <h5>Гайди</h5>
+            <h5>Servers</h5>
           </Link>
           <Link className="link" to={""}>
             <h5>Videos</h5>
