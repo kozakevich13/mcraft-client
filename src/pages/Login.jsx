@@ -5,6 +5,7 @@ import { useState } from "react";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loginStatus, setLoginStatus] = useState("");
 
   const login = (event) => {
     event.preventDefault();
@@ -13,7 +14,13 @@ const Login = () => {
         email: email,
         password: password,
       })
-      .then((res) => console.log(res))
+      .then((res) => {
+        if (res.data.message) {
+          setLoginStatus(res.data.message);
+        } else {
+          setLoginStatus(res.data[0].email);
+        }
+      })
       .catch((err) => console.log(err));
   };
 
@@ -41,6 +48,8 @@ const Login = () => {
           Don't you have an account?<Link to={"/register"}>Register</Link>
         </span>
       </form>
+
+      <h1>{loginStatus}</h1>
     </div>
   );
 };
