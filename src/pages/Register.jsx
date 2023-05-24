@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import env from "react-dotenv";
 
 const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-
   function handleSubmit(event) {
     console.log("hi");
     event.preventDefault();
     axios
-      .post("http://localhost:5000/register", {
+      .post(process.env.REACT_APP_BASE_URL, {
         name: name,
         email: email,
         password: password,
