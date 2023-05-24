@@ -27,9 +27,7 @@ const Login = () => {
   return (
     <div className="auth">
       <h1>Login</h1>
-      <Link className="link" to={"/"}>
-        <h5>Home</h5>
-      </Link>
+
       <form>
         <input
           required
@@ -51,6 +49,9 @@ const Login = () => {
           Don't you have an account?<Link to={"/register"}>Register</Link>
         </span>
       </form>
+      <Link className="home-link" to={"/"}>
+        Home
+      </Link>
     </div>
   );
 };
