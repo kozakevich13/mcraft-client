@@ -25,7 +25,13 @@ const Navbar = () => {
             <h5>Гайди</h5>
           </Link>
           <Link className="link" to={""}>
-            <h5>Відео</h5>
+            <h5>Videos</h5>
+          </Link>
+          <Link className="link" to={"/login"}>
+            <h5>Log in</h5>
+          </Link>
+          <Link className="link" to={"/register"}>
+            <h5>Sing in</h5>
           </Link>
         </div>
       </div>
