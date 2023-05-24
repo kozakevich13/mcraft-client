@@ -1,3 +1,5 @@
+$back-color: #76b5c5;
+
 .app {
   //log and reg
   display: flex;
@@ -54,14 +56,14 @@
 
         p {
           text-align: center;
-          color: red;
+          color: green;
           font-size: 12px;
         }
       }
     }
 
     .navbar {
-      background-color: #f0f0f0;
+      background-color: $back-color;
       padding: 10px 0;
 
       .container {
@@ -75,6 +77,7 @@
           img {
             height: 40px;
             width: auto;
+            background-color: transparent; /* Видаляємо задній фон */
           }
         }
 
