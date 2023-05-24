@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import env from "react-dotenv";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -45,10 +44,10 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
           name="password"
         />
-        <button type="submit">Login</button>
+        <button type="submit">Register</button>
         <p>this is error</p>
         <span>
-          Don't you have an account?<Link to={"/login"}>Register</Link>
+          Don't you have an account?<Link to={"/login"}>Login</Link>
         </span>
       </form>
     </div>
