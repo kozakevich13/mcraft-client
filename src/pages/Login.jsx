@@ -46,13 +46,11 @@ const Login = () => {
           name="password"
         />
         <button onClick={login}>Login</button>
-        <p>this is error</p>
+        <p>{loginStatus}</p>
         <span>
           Don't you have an account?<Link to={"/register"}>Register</Link>
         </span>
       </form>
-
-      <h1>{loginStatus}</h1>
     </div>
   );
 };
