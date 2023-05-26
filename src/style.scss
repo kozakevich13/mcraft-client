@@ -1,10 +1,13 @@
 $lightGreen: #b9e7e7;
+$minecraft-green: #55c55a;
+$minecraft-gray: #7d7d7d;
+$minecraft-dark-gray: #333333;
 
 .app {
   display: flex;
   justify-content: center;
   .container {
-    width: 1024px;
+    width: 100%;
 
     .link {
       text-decoration: none;
@@ -64,45 +67,65 @@ $lightGreen: #b9e7e7;
     //NAVBAR
 
     .navbar {
+      background-color: $minecraft-dark-gray;
+      padding: 10px 0;
+
       .container {
-        padding: 10px 0px;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
+
         .logo {
           img {
-            width: 120px;
+            max-width: 100px;
           }
         }
+
         .links {
           display: flex;
           align-items: center;
-          gap: 10px;
 
-          h6 {
-            font-size: 16px;
-            font-weight: 300;
+          .link {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            text-decoration: none;
+            color: $minecraft-gray;
+            font-family: "Minecraft", sans-serif;
+            font-size: 18px;
+            transition: color 0.3s ease;
+
+            &:hover {
+              color: $minecraft-green;
+            }
+
+            h6 {
+              margin-left: 5px;
+              margin-bottom: 0;
+            }
           }
 
           span {
-            cursor: pointer;
+            margin-right: 20px;
+            color: $minecraft-gray;
+            font-family: "Minecraft", sans-serif;
+            font-size: 18px;
           }
 
           .write {
-            background-color: $lightGreen;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 300;
-            border: 1px solid white;
+            background-color: $minecraft-green;
+            padding: 8px 12px;
+            border-radius: 4px;
 
             &:hover {
-              color: teal;
-              background-color: white;
-              border: 1px solid teal;
+              background-color: darken($minecraft-green, 10%);
+            }
+
+            .link {
+              color: #fff;
+              font-family: "Minecraft", sans-serif;
+              font-size: 18px;
+              text-decoration: none;
             }
           }
         }
@@ -337,34 +360,34 @@ $lightGreen: #b9e7e7;
         .item {
           border: 1px solid lightgray;
           padding: 10px;
-          flex:1;
+          flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           font-size: 12px;
           color: #555;
 
-          h1{
+          h1 {
             font-size: 20px;
           }
 
-          .file{
+          .file {
             text-decoration: underline;
             cursor: pointer;
           }
 
-          .buttons{
+          .buttons {
             display: flex;
             justify-content: space-between;
 
-            :first-child{
+            :first-child {
               cursor: pointer;
               color: teal;
               background-color: white;
               border: 1px solid teal;
               padding: 3px 5px;
             }
-            :last-child{
+            :last-child {
               cursor: pointer;
               color: white;
               background-color: teal;
@@ -373,7 +396,7 @@ $lightGreen: #b9e7e7;
             }
           }
 
-          .cat{
+          .cat {
             display: flex;
             align-items: center;
             gap: 2px;
