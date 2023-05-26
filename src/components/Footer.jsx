@@ -1,11 +1,12 @@
-import logo from "../img/logo.png";
+import React from "react";
+import Logo from "../img/logo.png";
 
 const Footer = () => {
   return (
     <footer>
-      <img src={logo} alt="logo" />
+      <img src={Logo} alt="" />
       <span>
-        Made with love and <b>React.js</b>
+        Made with ♥️ and <b>React.js</b>.
       </span>
     </footer>
   );
