@@ -1,8 +1,5 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import axios from "axios";
 import client from "../contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
@@ -34,14 +31,16 @@ const Home = () => {
               <img
                 alt={fields.background.fields.title}
                 src={fields.background.fields.file.url}
-              ></img>
+              />
             </div>
             <div className="content">
               <Link className="link" to={`/post/${sys.id}`}>
                 <h1>{fields.header}</h1>
               </Link>
               <p>{documentToReactComponents(fields.description)}</p>
-              <button>Read More</button>
+              <Link to={`/post/${sys.id}`}>
+                <button>Read More</button>
+              </Link>
             </div>
           </div>
         ))}

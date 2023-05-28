@@ -8,7 +8,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Write from "./pages/Write";
 import Home from "./pages/Home";
-import Single from "./pages/Single";
+import Post from "./pages/Post";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./style.scss";
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/post/:id",
-        element: <Single />,
+        path: "/post/:postId",
+        element: <Post />,
       },
       {
         path: "/write",
