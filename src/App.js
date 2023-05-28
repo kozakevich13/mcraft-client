@@ -1,12 +1,6 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Outlet,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import Write from "./pages/Write";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import Navbar from "./components/Navbar";
@@ -36,10 +30,6 @@ const router = createBrowserRouter([
       {
         path: "/post/:postId",
         element: <Post />,
-      },
-      {
-        path: "/write",
-        element: <Write />,
       },
       {
         path: "/profile",
