@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import client from "../contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import "../style/Home.scss";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
