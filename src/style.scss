@@ -1,5 +1,5 @@
 $lightGreen: #b9e7e7;
-$minecraft-green: #55c55a;
+$minecraft-blue: #3fc9f7;
 $minecraft-gray: #7d7d7d;
 $minecraft-dark-gray: #333333;
 
@@ -96,7 +96,7 @@ $minecraft-dark-gray: #333333;
             transition: color 0.3s ease;
 
             &:hover {
-              color: $minecraft-green;
+              color: $minecraft-blue;
             }
 
             h6 {
@@ -113,12 +113,12 @@ $minecraft-dark-gray: #333333;
           }
 
           .write {
-            background-color: $minecraft-green;
+            background-color: $minecraft-blue;
             padding: 8px 12px;
             border-radius: 4px;
 
             &:hover {
-              background-color: darken($minecraft-green, 10%);
+              background-color: darken($minecraft-blue, 10%);
             }
 
             .link {
@@ -135,15 +135,20 @@ $minecraft-dark-gray: #333333;
     //FOOTER
 
     footer {
-      margin-top: 100px;
-      padding: 20px;
-      background-color: $lightGreen;
+      width: 100%;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: $minecraft-dark-gray;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 12px;
       img {
         height: 50px;
+      }
+      span {
+        padding-right: 10px;
       }
     }
 
