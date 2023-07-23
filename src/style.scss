@@ -3,6 +3,13 @@ $minecraft-blue: #3fc9f7;
 $minecraft-gray: #7d7d7d;
 $minecraft-dark-gray: #333333;
 
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
 .app {
   display: flex;
   justify-content: center;
@@ -135,17 +142,17 @@ $minecraft-dark-gray: #333333;
     //FOOTER
 
     footer {
+      position: absolute;
+      bottom: 0;
       width: 100%;
-
-      padding-top: 10px;
-      padding-bottom: 10px;
       background-color: $minecraft-dark-gray;
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 12px;
       img {
-        height: 50px;
+        padding: 5px;
+        height: 40px;
       }
       span {
         padding-right: 10px;
