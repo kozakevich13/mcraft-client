@@ -18,7 +18,7 @@ const Navbar = () => {
           <Link className="link" to="/?cat=art">
             <h6>Forum</h6>
           </Link>
-          <Link className="link" to="/?cat=science">
+          <Link className="link" to="/rules">
             <h6>Rules</h6>
           </Link>
           <Link className="link" to="/?cat=technology">
