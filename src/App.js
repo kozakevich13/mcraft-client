@@ -4,6 +4,8 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Post from "./pages/Post";
 import Rules from "./pages/Rules";
+import Donate from "./pages/Donate";
+import Servers from "./pages/Servers";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./style.scss";
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path: "/rules",
         element: <Rules />,
+      },
+      {
+        path: "/servers",
+        element: <Servers />,
+      },
+      {
+        path: "/donate",
+        element: <Donate />,
       },
     ],
   },
