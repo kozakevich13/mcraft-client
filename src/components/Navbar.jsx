@@ -15,9 +15,9 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="links">
-          <Link className="link" to="/?cat=art">
+          {/* <Link className="link" to="/?cat=art">
             <h6>Forum</h6>
-          </Link>
+          </Link> */}
           <Link className="link" to="/rules">
             <h6>Rules</h6>
           </Link>
@@ -27,15 +27,15 @@ const Navbar = () => {
           <Link className="link" to="/?cat=cinema">
             <h6>Servers</h6>
           </Link>
-          <Link className="link" to="/?cat=design">
+          {/* <Link className="link" to="/?cat=design">
             <h6>Videos</h6>
-          </Link>
+          </Link> */}
           <span>{currentUser?.username}</span>
           {currentUser ? (
             <>
-              <span className="link" onClick={logout}>
+              <Link className="link" onClick={logout}>
                 Logout
-              </span>
+              </Link>
               <Link className="link" to="/profile">
                 Profile
               </Link>
