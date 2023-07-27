@@ -1,0 +1,73 @@
+//NAVBAR
+$lightGreen: #b9e7e7;
+$minecraft-blue: #3fc9f7;
+$minecraft-gray: #7d7d7d;
+$minecraft-dark-gray: #333333;
+
+.navbar {
+  background-color: $minecraft-dark-gray;
+  padding: 10px 0;
+  height: 50px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      img {
+        max-width: 100px;
+        max-height: 50px;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+
+      .link {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        text-decoration: none;
+        color: $minecraft-gray;
+        font-family: "Minecraft", sans-serif;
+        font-size: 18px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $minecraft-blue;
+        }
+
+        h6 {
+          margin-left: 5px;
+          margin-bottom: 0;
+        }
+      }
+
+      span {
+        margin-right: 20px;
+        color: $minecraft-gray;
+        font-family: "Minecraft", sans-serif;
+        font-size: 18px;
+      }
+
+      .write {
+        background-color: $minecraft-blue;
+        padding: 8px 12px;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: darken($minecraft-blue, 10%);
+        }
+
+        .link {
+          color: #fff;
+          font-family: "Minecraft", sans-serif;
+          font-size: 18px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
