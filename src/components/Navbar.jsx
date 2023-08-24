@@ -16,9 +16,6 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="links">
-          {/* <Link className="link" to="/?cat=art">
-            <h6>Forum</h6>
-          </Link> */}
           <Link className="link" to="/rules">
             <h6>Rules</h6>
           </Link>
@@ -28,9 +25,8 @@ const Navbar = () => {
           <Link className="link" to="/servers">
             <h6>Servers</h6>
           </Link>
-          {/* <Link className="link" to="/?cat=design">
-            <h6>Videos</h6>
-          </Link> */}
+        </div>
+        <div className="profile links">
           <span>{currentUser?.username}</span>
           {currentUser ? (
             <>
